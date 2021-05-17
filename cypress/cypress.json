@@ -1,0 +1,14 @@
+{
+    "env": {
+        "dev": "",
+        "staging": "",
+        "prod": ""
+    },
+    "pageLoadTimeout": 30000,
+    "responseTimeout": 20000,
+    "screenshotsFolder": "cypress/results/screenshots",
+    "videosFolder": "cypress/results/videos",
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "testFiles": "**/*.js"
+}
