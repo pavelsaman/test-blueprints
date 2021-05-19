@@ -22,7 +22,8 @@ module.exports = (on, config) => {
     // `on` is used to hook into various events Cypress emits
     // `config` is the resolved Cypress config
 
-    config.baseUrl = config.env[process.env.ENV];
-    if (process.env.PIPELINE === "true") config.video = false;
+    config.baseUrl = config.env.url[process.env.ENV];
+    config.video = false;
+    if (process.env.VIDEO === "true" && process.env.PIPELINE === "false") config.video = true;
     return config;
 }
