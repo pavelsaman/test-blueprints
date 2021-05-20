@@ -1,0 +1,18 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = "*"
+python-dotenv = "*"
+pytest = "*"
+pytest-reporter-html1 = "*"
+pytest-reporter = "*"
+pytest-html = "*"
+pytest-reportlog = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
