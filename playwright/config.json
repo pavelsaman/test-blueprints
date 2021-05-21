@@ -46,7 +46,7 @@
     "reqTimeout": 10000,
     "functionTimeout": 8000,
     "baseUrl": {
-        "dev": "https://alpinepro-outlet.cz/",
+        "dev": "",
         "staging": "",
         "prod": ""
     }
