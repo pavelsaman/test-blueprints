@@ -1,0 +1,23 @@
+{
+    "src": "./Tests/**/*.js",
+    "browsers": ["chrome"],
+     "reporter": [
+        {
+            "name": "spec"
+        },
+        {
+            "name": "xunit",
+            "output": "Results/report.xml"
+        }
+    ],
+    "screenshots": {
+        "path": "./Results/Screenshots/",
+        "takeOnFails": true,
+        "fullPage": true,
+        "pathPattern": "${DATE}_${TIME}_${BROWSER}_${BROWSER_VERSION}_${OS}_${OS_VERSION}/${FIXTURE}/${TEST_INDEX}_${TEST}.png"
+    },
+    "skipJsErrors": true,
+    "selectorTimeout": 9000,
+    "assertionTimeout": 9000,
+    "pageLoadTimeout": 9000
+}
