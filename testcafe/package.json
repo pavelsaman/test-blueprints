@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "test": "./node_modules/.bin/testcafe --test-meta retired=0 chromium",
+        "test": "testcafe --test-meta retired=0 chromium",
         "clean": "rm -rf Results/Screenshots && rm Results/report.xml && mkdir Results/Screenshots"
     },
     "keywords": [],
