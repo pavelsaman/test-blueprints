@@ -4,9 +4,9 @@
     "description": "Playwright mocha e2e FE checks",
     "type": "module",
     "scripts": {
-        "test": "clear && ./node_modules/.bin/mocha -i --grep @retired",
+        "test": "clear && mocha -i --grep @retired",
         "t": "npm run test",
-        "lint": "./node_modules/.bin/eslint --max-warnings 0 \"**/**/*.js\"",
+        "lint": "eslint --max-warnings 0 \"**/**/*.js\"",
         "l": "npm run lint",
         "clean": "clear && rm -rf ./Results/ && mkdir -p ./Results/Screenshots && mkdir -p ./Results/Videos",
         "c": "npm run clean"
