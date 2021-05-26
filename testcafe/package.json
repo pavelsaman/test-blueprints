@@ -1,0 +1,17 @@
+{
+    "name": "testcafe",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "test": "./node_modules/.bin/testcafe --test-meta retired=0 chromium",
+        "clean": "rm -rf Results/Screenshots && rm Results/report.xml && mkdir Results/Screenshots"
+    },
+    "keywords": [],
+    "author": "Pavel Saman",
+    "license": "MIT",
+    "devDependencies": {
+        "dotenv": "~10.0.0",
+        "testcafe": "~1.14.2",
+        "testcafe-reporter-xunit": "~2.1.0"
+    }
+}

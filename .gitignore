@@ -2,4 +2,3 @@ node_modules/
 package-lock.json
 .pytest_cache
 Pipfile.lock
-Results/

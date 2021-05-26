@@ -1,0 +1,29 @@
+{
+    "name": "playwright",
+    "version": "1.0.0",
+    "description": "Playwright mocha e2e FE checks",
+    "type": "module",
+    "scripts": {
+        "test": "clear && ./node_modules/.bin/mocha -i --grep @retired",
+        "t": "npm run test",
+        "lint": "./node_modules/.bin/eslint --max-warnings 0 \"**/**/*.js\"",
+        "l": "npm run lint",
+        "clean": "clear && rm -rf ./Results/ && mkdir -p ./Results/Screenshots && mkdir -p ./Results/Videos",
+        "c": "npm run clean"
+    },
+    "keywords": [],
+    "author": "Pavel Saman",
+    "license": "MIT",
+    "devDependencies": {
+        "chai": "~4.3.4",
+        "dotenv": "~9.0.2",
+        "eslint": "~7.26.0",
+        "eslint-plugin-import": "~2.23.2",
+        "mocha": "~8.4.0",
+        "mocha-junit-reporter": "~2.0.0",
+        "mocha-multi-reporters": "~1.5.1",
+        "mocha-simple-html-reporter": "~2.0.0",
+        "playwright": "~1.11.1",
+        "useful-library": "~1.2.2"
+    }
+}

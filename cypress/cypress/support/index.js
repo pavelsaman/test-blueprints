@@ -22,3 +22,5 @@ import './commands'
 import 'cypress-file-upload';
 
 require('cypress-grep')();
+
+import "cypress-real-events/support";

@@ -1,0 +1,53 @@
+{
+    "browserOptions": {
+        "headless": {
+            "headless": true,
+            "args": [
+                "--window-size=1920,1080"
+            ],
+            "defaultViewport": null
+        },
+        "pipeline": {
+            "headless": true,
+            "args": [
+                "--window-size=1920,1080"
+            ],
+            "defaultViewport": null
+        },
+        "gui": {
+            "headless": false,
+            "args": [
+                "--start-maximized"
+            ],
+            "defaultViewport": null
+        },
+        "debug": {
+            "headless": false,
+            "args": [
+                "--start-maximized"
+            ],
+            "defaultViewport": null,
+            "slowMo": 50,
+            "devtools": true
+        }
+    },
+    "contextOptions": {
+        "normal": {
+            "viewport": null,
+            "recordVideo": {
+                "dir": "./Results/Videos/"
+            }
+        },
+        "pipeline": {
+            "viewport": null
+        }
+    },
+    "timeout": 20000,
+    "reqTimeout": 10000,
+    "functionTimeout": 8000,
+    "baseUrl": {
+        "dev": "",
+        "staging": "",
+        "prod": ""
+    }
+}
